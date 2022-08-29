@@ -687,6 +687,7 @@ GameObject:
   - component: {fileID: 713555307}
   - component: {fileID: 713555308}
   - component: {fileID: 713555309}
+  - component: {fileID: 713555310}
   m_Layer: 0
   m_Name: Player (Quby)
   m_TagString: Untagged
@@ -766,6 +767,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 355ea39dc472ae24b94738b9914f0649, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &713555310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713555304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb5e851d28ad4e44a130edff303fe16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToWait: 2
 --- !u!1 &822616246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1016,8 @@ GameObject:
   - component: {fileID: 1043224770}
   - component: {fileID: 1043224769}
   - component: {fileID: 1043224768}
+  - component: {fileID: 1043224772}
+  - component: {fileID: 1043224773}
   m_Layer: 0
   m_Name: Obstacle1 (1)
   m_TagString: Untagged
@@ -1017,8 +1033,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043224766}
   m_LocalRotation: {x: 0.0012493865, y: 0.0012493829, z: 0.70710474, w: 0.70710665}
-  m_LocalPosition: {x: 3.8600006, y: 6.27, z: -0.985}
-  m_LocalScale: {x: 1, y: 1, z: 4}
+  m_LocalPosition: {x: 3.32, y: 6.27, z: -0.3121}
+  m_LocalScale: {x: 1, y: 1, z: 3.013582}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 822616247}
@@ -1099,6 +1115,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043224766}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1043224772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043224766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb5e851d28ad4e44a130edff303fe16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToWait: 2
+--- !u!54 &1043224773
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043224766}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1663651419
 GameObject:
   m_ObjectHideFlags: 0
